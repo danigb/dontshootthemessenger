@@ -7,6 +7,10 @@ class Mail
     ATTS.each {|att| send("#{att}=", params[att]) unless params[att].blank?}
   end
 
+  def to_param
+    Time.new
+  end
+
   def recipients
     
   end

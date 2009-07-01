@@ -43,7 +43,7 @@ class MailsController < ApplicationController
     respond_to do |format|
       if @mail.save
         flash[:notice] = 'Mail was successfully created.'
-        format.html { render :action => 'show' }
+        format.html { redirect_to @mail  }
         format.xml  { render :xml => @mail, :status => :created, :location => @mail }
       else
         format.html { render :action => "new" }

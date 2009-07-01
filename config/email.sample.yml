@@ -4,8 +4,8 @@ development:
   domain: calc.com
   authentication: plain
   enable_starttls_auto: true
-  user_name: danigb@gmail.com
-  password: 655447
+  user_name: 
+  password: 
   
 production:
   address: smtp.server.com
@@ -13,6 +13,6 @@ production:
   domain: crestasylechugas.org
   authentication: plain
   enable_starttls_auto: true
-  user_name: crestasylechugas.org@gmail.com
-  password: autogestionautogestion
+  user_name: 
+  password: 
 
