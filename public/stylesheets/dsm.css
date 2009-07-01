@@ -1,0 +1,8 @@
+
+html {font-family:helvetica,arial,clean,sans-serif;}
+
+#welcome {font-size: 14em; text-align: center; letter-spacing: -0.1em;}
+
+h1 {font-size: 3em; margin-left: 3em;}
+form p {width: 100%; overflow: hidden;}
+form p label {display: block; float: left; width: 8em; text-align: right; margin-right: 1em; color: gray;}

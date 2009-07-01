@@ -1,0 +1,57 @@
+<h1>New mail</h1>
+
+<% form_for(@mail) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :recipient %>
+    <%= f.text_field :recipient %>
+  </p>
+  <p>
+    <%= f.label :subject %>
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <label>&nbsp;</label>
+    <%= f.submit 'Create' %>
+  </p>
+  <p>
+    <%= f.label :bcc %>
+    <%= f.text_field :bcc %>
+  </p>
+
+  <p>
+    <%= f.label :cc %>
+    <%= f.text_field :cc %>
+  </p>
+  <p>
+    <%= f.label :charset %>
+    <%= f.text_field :charset %>
+  </p>
+  <p>
+    <%= f.label :content_type %>
+    <%= f.text_field :content_type %>
+  </p>
+  <p>
+    <%= f.label :from %>
+    <%= f.text_field :from %>
+  </p>
+  <p>
+    <%= f.label :reply_to %>
+    <%= f.text_field :reply_to %>
+  </p>
+  <p>
+    <%= f.label :headers %>
+    <%= f.text_field :headers %>
+  </p>
+
+  <p>
+    <%= f.label :template %>
+    <%= f.text_field :template %>
+  </p>
+
+<% end %>
+

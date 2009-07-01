@@ -1,0 +1,58 @@
+<p>
+  <b>Bcc:</b>
+  <%=h @mail.bcc %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @mail.body %>
+</p>
+
+<p>
+  <b>Cc:</b>
+  <%=h @mail.cc %>
+</p>
+
+<p>
+  <b>Charset:</b>
+  <%=h @mail.charset %>
+</p>
+
+<p>
+  <b>Content type:</b>
+  <%=h @mail.content_type %>
+</p>
+
+<p>
+  <b>From:</b>
+  <%=h @mail.from %>
+</p>
+
+<p>
+  <b>Reply to:</b>
+  <%=h @mail.reply_to %>
+</p>
+
+<p>
+  <b>Headers:</b>
+  <%=h @mail.headers %>
+</p>
+
+<p>
+  <b>Recipient:</b>
+  <%=h @mail.recipient %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%=h @mail.subject %>
+</p>
+
+<p>
+  <b>Template:</b>
+  <%=h @mail.template %>
+</p>
+
+
+<%= link_to 'Edit', edit_mail_path(@mail) %> |
+<%= link_to 'Back', mails_path %>

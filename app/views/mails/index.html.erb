@@ -1,0 +1,40 @@
+<h1>Listing mails</h1>
+
+<table>
+  <tr>
+    <th>Bcc</th>
+    <th>Body</th>
+    <th>Cc</th>
+    <th>Charset</th>
+    <th>Content type</th>
+    <th>From</th>
+    <th>Reply to</th>
+    <th>Headers</th>
+    <th>Recipient</th>
+    <th>Subject</th>
+    <th>Template</th>
+  </tr>
+
+<% @mails.each do |mail| %>
+  <tr>
+    <td><%=h mail.bcc %></td>
+    <td><%=h mail.body %></td>
+    <td><%=h mail.cc %></td>
+    <td><%=h mail.charset %></td>
+    <td><%=h mail.content_type %></td>
+    <td><%=h mail.from %></td>
+    <td><%=h mail.reply_to %></td>
+    <td><%=h mail.headers %></td>
+    <td><%=h mail.recipient %></td>
+    <td><%=h mail.subject %></td>
+    <td><%=h mail.template %></td>
+    <td><%= link_to 'Show', mail %></td>
+    <td><%= link_to 'Edit', edit_mail_path(mail) %></td>
+    <td><%= link_to 'Destroy', mail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mail', new_mail_path %>

@@ -1,0 +1,18 @@
+development:
+  address: smtp.server.com
+  port: 25
+  domain: calc.com
+  authentication: plain
+  enable_starttls_auto: true
+  user_name: danigb@gmail.com
+  password: 655447
+  
+production:
+  address: smtp.server.com
+  port: 25
+  domain: crestasylechugas.org
+  authentication: plain
+  enable_starttls_auto: true
+  user_name: crestasylechugas.org@gmail.com
+  password: autogestionautogestion
+
